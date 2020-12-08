@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+}
+.myColor {
+  /* background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%); */
+  background-color: #016199;
+}
+.myShadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.myBtn {
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border: none;
+}
+.myBtn:hover {
+  background-image: linear-gradient(to right, #495aff 0%, #0acffe 100%);
+}
+.myHr {
+  height: 2px;
+  border-radius: 100px;
+}
+.myLinkBtn {
+  border-radius: 100px;
+  width: 50%;
+  border: 2px solid #fff;
+}
+@media (max-width: 720px) {
+  .wrapper {
+    margin: 2px;
+  }
+}
+
+/* admin page css */
+
+.navbar-side {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  background-color: #343a40;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.navbar-side h6 {
+  color: #fff;
+  margin: 9px 0 10px 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.navbar-side ul li {
+  list-style-type: none;
+}
+
+.navbar-side ul li a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1em;
+  width: 100%;
+  padding-left: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  white-space: nowrap;
+}
+
+.navbar-side ul li a:hover,
+.navbar-side ul li a.link-active {
+  background-color: #212121;
+  border-left: 5px solid #ccc;
+}
+
+.navbar-side ul li a .icon {
+  padding-right: 10px;
+}
+
+.content {
+  margin-left: 200px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.content #navBtn {
+  font-size: 20px;
+}
+
+.main.animate .navbar-side {
+  width: 60px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.main.animate .navbar-side .link-text {
+  display: none;
+}
+
+.main.animate .navbar-side .myCaret {
+  display: none;
+}
+
+.main.animate .content {
+  margin-left: 60px;
+}
+
+.myBtn2[aria-expanded="false"] .myCaret:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  float: right;
+  transition: all 0.5s;
+}
+
+.myBtn2[aria-expanded="true"] .myCaret:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  float: right;
+  transition: all 0.5s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+  .main .navbar-side {
+    width: 40px;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    font-size: 0.8em;
+  }
+  .main .navbar-side .link-text {
+    display: none;
+  }
+  .main .navbar-side .caret {
+    display: none;
+  }
+  .main .navbar-side h6 {
+    margin: 9px 0 10px 9px;
+    font-size: 1.2em;
+    line-height: 1.9;
+  }
+  .main .navbar-side ul li a {
+    padding-left: 10px;
+  }
+  .main .navbar-side ul li a:hover,
+  .main .navbar-side ul li a.link-active {
+    border-left: 2px solid #ccc;
+  }
+  .main .content {
+    margin-left: 40px;
+  }
+  .main.animate .navbar-side {
+    width: 150px;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .main.animate .navbar-side .link-text {
+    display: inline-block;
+  }
+  .main.animate .navbar-side .caret {
+    display: block;
+  }
+  .main.animate .content {
+    margin-left: 150px;
+  }
+  .myCaret {
+    display: none;
+  }
+}
+
+/* Project Deatils Css */
+
+/* fetch data */
+.connect ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+.connect ul li {
+  border: 1px solid black;
+  display: inline;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 100% !important;
+}
+/*table*/
+
+.connect td {
+  font-size: 18px !important;
+}
+.connect th {
+  font-size: 20px;
+}
+
+/* Profile page Css */
+
+form {
+  margin: 100px;
+}
+.input-field {
+  position: relative;
+  width: 550px;
+  height: 44px;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 150%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+input:invalid {
+  outline: 0;
+  color: #ff2300;
+  border-color: #ff2300;
+}
+input:focus,
+input:valid {
+  border-color: #00dd22;
+}
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}
